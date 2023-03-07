@@ -59,7 +59,7 @@ class Header extends React.Component {
         <Link to="/" className="navbar-brand">
           <img alt="logo" src={logo} />
         </Link>
-        {process.env.OPENAI_API_KEY}
+
         {this.props.currentUser ? (
           <LoggedInView currentUser={this.props.currentUser} />
         ) : (
